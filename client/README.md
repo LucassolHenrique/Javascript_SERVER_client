@@ -43,3 +43,11 @@ Object.freeze(n1); //o freeze faz o valor nunca ser alterado
         // var n2 = new Negociacao(); //variavel criada com nome de n2 
         // console.log(n2); //mostra no console
         // n2.quantidade = 20;**
+
+
+                console.log(n1.quantidade); //por ser um metodo só chamar a quantidade dentro do n1
+        //Object.freeze(n1); //o freeze não permite o valor ser alterado
+        console.log(n1.data);   //por ser um metodo só chamar a quantidade dentro do n1
+        console.log(n1.valor);  //por ser um metodo só chamar a quantidade dentro do n1
+        console.log(n1.volume); //por ser um metodo só chamar a quantidade dentro do n1
+    

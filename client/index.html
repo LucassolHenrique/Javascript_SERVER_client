@@ -60,12 +60,17 @@
     </table>
     <script src="js/app/models/Negociacao.js"></script>
     <script>
-        var n1 = new Negociacao(new Date(), 5, 700); //variavel com o nome de n1 
-        console.log(n1.quantidade); //por ser um metodo só chamar a quantidade dentro do n1
-        Object.freeze(n1); //o freeze não permite o valor ser alterado
-        console.log(n1.data);   //por ser um metodo só chamar a quantidade dentro do n1
-        console.log(n1.valor);  //por ser um metodo só chamar a quantidade dentro do n1
-        console.log(n1.volume); //por ser um metodo só chamar a quantidade dentro do n1
+        //trocar o var por let
+        var hoje = new Date();
+
+        var n1 = new Negociacao(hoje, 5, 700); //variavel com o nome de n1 
+        
+        console.log(n1.data);
+
+        hoje.setDate(11);
+
+        console.log(n1.data);
+
     </script>
 </body>
 </html>
