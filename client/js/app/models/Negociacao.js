@@ -7,8 +7,8 @@ class Negociacao {
         Object.freeze(this);
     }
 
-    get volume() { // perguntando pra negociação qual o seu volume
 
+    get volume() { // perguntando pra negociação qual o seu volume
         return this._quantidade * this._valor; //O _ faz com que só por aqui o valor possa ser mudado não por outros lugares
     }
 

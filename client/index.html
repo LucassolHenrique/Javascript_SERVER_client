@@ -11,7 +11,8 @@
     
     <h1 class="text-center">Negociações</h1>
     
-    <form class="form">
+    <form class="form" onsubmit="negociacaoController.adiciona(event)"> 
+        <!-- estamos fazendo o onsbmit pleo arquivo html não pelo mundo javascript funciona da mesma forma -->
         
         <div class="form-group">
             <label for="data">Data</label>
@@ -59,18 +60,9 @@
         </tfoot>
     </table>
     <script src="js/app/models/Negociacao.js"></script>
+    <script src="js/app/controllers/NegociacaoController.js"></script>
     <script>
-        //trocar o var por let
-        var hoje = new Date();
-
-        var n1 = new Negociacao(hoje, 5, 700); //variavel com o nome de n1 
-        
-        console.log(n1.data);
-
-        hoje.setDate(11);
-
-        console.log(n1.data);
-
+        let negociacaoController = new NegociacaoController();
     </script>
 </body>
 </html>
