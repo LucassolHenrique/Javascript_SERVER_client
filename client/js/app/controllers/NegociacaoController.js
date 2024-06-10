@@ -1,17 +1,28 @@
 class NegociacaoController {
 
+    constructor() {
+        
+        let $ =  document.querySelector.bind(document); 
+        //tratando o querSelector como uma função
+        
+               //alert('Chamei ação no controller')
+        this._inputData = $('#data');
+        this._inputQuantidade = $('#quantidade');
+        this._inputValor = $('#valor');
+        // esta sendo usado o constructor para deixar mais rapido o site
+        // na hora de pesquisar o codigo
+    }
 
     adiciona(event) {
         
         event.preventDefault();
-        //alert('Chamei ação no controller')
-        let inputData = document.querySelector('#data');
-        let inputQuantidade = document.querySelector('#quantidade');
-        let inputValor = document.querySelector('#valor');
 
-        console.log(inputData.Value);
-        console.log(inputQuantidade.Value);
-        console.log(inputValor.Value);
+        //2016-11-12
+        let data = new Date(this._inputData.value.split('-')); //cria a - entre os elementos que voce quiser
+        console.log(data);
+
+
+
 
     }
 

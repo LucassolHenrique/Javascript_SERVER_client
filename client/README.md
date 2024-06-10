@@ -96,3 +96,23 @@ com o alert dentro do for(let) agora sim vai funcionar chamando a função e seu
 
 var pessoa = new Pessoa('Flávio', 'Almeida');
 console.log('Nome completo: ' + pessoa.obtemNomeCompleto());
+
+<!-- // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+dia 10/06
+
+
+    // let negociacao = new Negociacao(
+        //     this._inputData.value,
+        //     this._inputQuantidade.value,
+        //     this._inputValor.value
+        // );
+
+
+
+
+
+coisas a pesquisar corretamente oq faz
+
+spli
+bind
+replace
