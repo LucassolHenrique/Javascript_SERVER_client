@@ -15,26 +15,21 @@ class NegociacaoController {
 
     adiciona(event) {
         
-        event.preventDefault();
+        event.preventDefault()
 
-        //2016-11-12 fazendo o ano com split e Date e map
-        let data = new Date(...
-//os ... fazem que o numero não começe em 0, 1, 2 e sim 1, 2, 3
-            this._inputData.value
-                .split('-')
-                .map((item, indice) => item - indice % 2) 
-                //arrow function nome disso =>
-        );
-         //cria a - entre os elementos que voce quiser
-        
         let negociacao = new Negociacao(
-            data,
+            DateHelper.textoParaData(this._inputData.value),
             this._inputQuantidade.value,
-            this._inputValor.value
-            
+            this._inputValor.value 
         );
+        
 
         console.log(negociacao);
+        
+        console.log(DateHelper.dataParaTexto(negociacao.data));
+        
+        
+
 
 
     }
