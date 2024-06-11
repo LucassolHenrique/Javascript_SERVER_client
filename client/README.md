@@ -107,7 +107,9 @@ dia 10/06
         //     this._inputValor.value
         // );
 
+finalizado a controler do site, aonde conseguimos as informações que são colocadas no sistema.
 
+controler cria uma Negociação, 
 
 
 
@@ -116,3 +118,4 @@ coisas a pesquisar corretamente oq faz
 spli
 bind
 replace
+arrow function
