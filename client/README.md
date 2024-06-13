@@ -36,8 +36,10 @@ Document.querySelector('#data), (ele ve o html e puxa o lugar que estiver o id)
 
 queria dizer um valor em uma quantidade para sempre sem qualquer tipo de pessoa conseguir mexer 
 
-Object.freeze(n1); //o freeze faz o valor nunca ser alterado
-       ** // n1.quantidade = 10; sentando uma quantidade na quantidade
+Object.freeze(n1); 
+
+        //o freeze faz o valor nunca ser alterado
+        // n1.quantidade = 10; sentando uma quantidade na quantidade
         // n1.valor = 200.50; colocando um valor pronto para o valor
 
         // var n2 = new Negociacao(); //variavel criada com nome de n2 
