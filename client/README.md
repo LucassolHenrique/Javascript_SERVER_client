@@ -36,9 +36,9 @@ Document.querySelector('#data), (ele ve o html e puxa o lugar que estiver o id)
 
 queria dizer um valor em uma quantidade para sempre sem qualquer tipo de pessoa conseguir mexer 
 
-Object.freeze(n1); 
+        // Object.freeze(n1); 
 
-        //o freeze faz o valor nunca ser alterado
+        // o freeze faz o valor nunca ser alterado
         // n1.quantidade = 10; sentando uma quantidade na quantidade
         // n1.valor = 200.50; colocando um valor pronto para o valor
 
@@ -119,16 +119,16 @@ dia 11_06
 <p id="p1">Olá</p>
 
 
-function mostra() {
-    alert('Fui clicado');
-}
+    function mostra() {
+        alert('Fui clicado');
+    }
 
-document.querySelector('#p1').addEventListener('click', mostra);
+    document.querySelector('#p1').addEventListener('click', mostra);
 
 onclick serve para associar uma função ao click do botão em javascript onclick
 
 
-class NegociacaoController {
+    class NegociacaoController {
 
     constructor() {
         
@@ -149,7 +149,8 @@ class NegociacaoController {
 
         //2016-11-12 fazendo o ano com split e Date e map
         let data = new Date(...
-//os ... fazem que o numero não começe em 0, 1, 2 e sim 1, 2, 3
+
+        //os ... fazem que o numero não começe em 0, 1, 2 e sim 1, 2, 3
             this._inputData.value
                 .split('-')
                 .map((item, indice) => item - indice % 2) 
@@ -169,10 +170,6 @@ class NegociacaoController {
         
         console.log(diaMesAno);
         //console.log(negociacao);
-        
-        
-
-
 
     }
 
