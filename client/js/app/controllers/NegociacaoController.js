@@ -12,17 +12,19 @@ class NegociacaoController {
         this._listaNegociacoes = new ListaNegociacoes();
         // esta sendo usado o constructor para deixar mais rapido o site
         // na hora de pesquisar o codigo
+        this._negociacoesView = new NegociacoesView($('#negociacoesView'));
+
+        this._negociacoesView.update(this._listaNegociacoes);
     }
 
     adiciona(event) {
         
         event.preventDefault();
-
-        //console.log(negociacao);
-        //console.log(DateHelper.dataParaTexto(negociacao.data));
         this._listaNegociacoes.adiciona(this._criaNegociacao());
+        this._negociacoesView.update(this._listaNegociacoes);
         this._limpaFormulario();
-        console.log(this._listaNegociacoes.negociacoes);
+
+        //console.log(this._listaNegociacoes.negociacoes);
         //mostra os resultados das informaões das tabelas
 
     }
