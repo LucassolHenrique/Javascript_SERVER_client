@@ -13,15 +13,21 @@ class NegociacaoController {
         // esta sendo usado o constructor para deixar mais rapido o site
         // na hora de pesquisar o codigo
         this._negociacoesView = new NegociacoesView($('#negociacoesView'));
-
         this._negociacoesView.update(this._listaNegociacoes);
+
+        this._mensagem = new Mensagem();
+        this._mensagemView = new MensagemView($('#mensagemView'));
+        this._mensagemView.update(this._mensagem);
     }
 
     adiciona(event) {
         
         event.preventDefault();
         this._listaNegociacoes.adiciona(this._criaNegociacao());
-        this._negociacoesView.update(this._listaNegociacoes);
+        this._negociacoesView.update(this._listaNegociacoes)
+        this._mensagem.texto = 'Negociação adicionado com sucesso';
+        this._mensagemView.update(this._mensagem);
+
         this._limpaFormulario();
 
         //console.log(this._listaNegociacoes.negociacoes);

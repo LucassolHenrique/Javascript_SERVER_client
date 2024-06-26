@@ -1,10 +1,11 @@
-class NegociacoesView {
-
-    constructor(elemento) {
-        this._elemento = elemento;
-    }
+class NegociacoesView extends View{
+    //extends pega class do View
 // _fecha a class
-    _template(model) {
+    constructor(elemento) {
+        super(elemento) //passsa para o pai
+    }
+
+    template(model) {
 
         return `
         <table class="table table-hover table-bordered">
@@ -36,10 +37,5 @@ class NegociacoesView {
             </tfoot>
         </table>
         `;
-    }
-
-    update(model) {
-        //chama o html com o innerHTML
-        this._elemento.innerHTML = this._template(model);
     }
 }
