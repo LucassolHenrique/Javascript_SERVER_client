@@ -34,3 +34,7 @@ Após baixar o projeto, você pode abrir com o Visual Studio Code. Para isso, no
 Ao finalizar esses passos, você pode executar a aplicação com a extensão Live Server 🏆 
 
 
+Dia de começo do projeto 05/03
+
+Nome do curso 
+(https://cursos.alura.com.br/course/construindo-paginas-dinamicas-javascript/task/178088)
