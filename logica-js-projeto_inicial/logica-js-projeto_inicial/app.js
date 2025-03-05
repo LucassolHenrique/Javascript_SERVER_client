@@ -13,10 +13,6 @@ while (numeropositivo != 11) {
         numeropositivo++;
 }
 
-
-
-
-
 let rand;
 
 rand = prompt('Jogo dos numero tem que acertar o numero, escolha quantos numeros quer');
@@ -27,7 +23,6 @@ let chute;
 let tentativas = 1;
 
 let contador = 1;
-
 
 
 while (chute != numeroSecreto) {
